@@ -1,0 +1,17 @@
+<div class="edit">
+  <div class="edit_2">
+    <form action="/update/<%=@one_post.id%>" method="post">
+        가게 이름 : <br>
+        <input name="title" type="text" value="<%= @one_post.title %>" placeholder="가게 이름"><br>
+        가게주소 : <br>
+        <input name="direction" type="text" value="<%= @one_post.direction %>" placeholder="주소"><br>
+        운영 시간 : <br>
+        <input name="runtime" type="text" value="<%= @one_post.runtime %>" placeholder="운영 시간"><br>
+        추천 한 마디 : <br>
+        <textarea name="content" cols="3" value="<%= @one_post.content %>" placeholder="추천의 한 마디를 적어주세요!"></textarea>
+        <div class="button_style">
+        <button type="submit">upload</button>
+        </div>
+    </form>  
+  </div>
+</div>

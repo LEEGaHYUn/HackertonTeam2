@@ -1,0 +1,242 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+.margin{
+    margin: auto;
+    margin-top: 100px;
+    width: 700px;
+    margin-bottom: 20px;
+}
+.button{ background-color: #FFFFFF
+    
+}
+.category{
+    margin: auto;
+    margin-top: 100px;
+    width: 800px;
+    
+}
+.cat_item{
+    padding: 3em 3em 1em 3em;
+	background-color: #f4f4f4;
+	border-radius: 4px;
+	border: 2px solid;
+	border-color:#c0c0c0;
+	text-align: center;
+	margin-bottom: 50px;
+}
+/* Item */
+
+	.cat_item {
+		padding: 3em 3em 1em 3em;
+		background-color: #ffffff;
+		border: 2px solid;
+		border-color:#c0c0c0;
+		border-radius: 4px;
+		text-align: center;
+	}
+
+		.cat_item header {
+			border-top-left-radius: 4px;
+			border-top-right-radius: 4px;
+			margin: -3em 0 3em -3em;
+			width: calc(100% + 6em);
+			height: 15em;
+			display: -moz-flex;
+			display: -webkit-flex;
+			display: -ms-flex;
+			display: flex;
+			-moz-align-items: center;
+			-webkit-align-items: center;
+			-ms-align-items: center;
+			align-items: center;
+			-moz-justify-content: center;
+			-webkit-justify-content: center;
+			-ms-justify-content: center;
+			justify-content: center;
+			background-color: #444;
+			color: rgba(255, 255, 255, 0.75);
+			position: relative;
+			overflow: hidden;
+		}
+
+			.cot_item header input, .item header select, .item header textarea {
+				color: #ffffff;
+			}
+
+			.cot_item header a {
+				color: inherit;
+			}
+
+				.cot_item header a:hover {
+					color: #EF6480 !important;
+				}
+
+			.cot_item header strong, .item header b {
+				color: #ffffff;
+			}
+
+			.cot_item header h1, .item header h2, .item header h3, .item header h4, .item header h5, .item header h6 {
+				color: #ffffff;
+			}
+
+			.cot_item header blockquote {
+				border-left-color: #ffffff;
+			}
+
+			.cot_item header code {
+				background: rgba(255, 255, 255, 0.075);
+				border-color: #ffffff;
+			}
+
+			.cot_item header hr {
+				border-bottom-color: #ffffff;
+			}
+
+			.cot_item header a {
+				-moz-transition: -moz-transform 0.2s ease;
+				-webkit-transition: -webkit-transform 0.2s ease;
+				-ms-transition: -ms-transform 0.2s ease;
+				transition: transform 0.2s ease;
+				background-size: cover;
+				background-position: center;
+				background-repeat: no-repeat;
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				display: block;
+			}
+
+				.cot_item header a:before {
+					content: '';
+					display: block;
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					background-color: rgba(0, 0, 0, 0.25);
+					background-image: url("images/overlay.png");
+				}
+
+			.cot_item header:hover a {
+				-moz-transform: scale(1.1);
+				-webkit-transform: scale(1.1);
+				-ms-transform: scale(1.1);
+				transform: scale(1.1);
+			}
+
+			.cot_item header > * {
+				position: relative;
+				z-index: 1;
+			}
+
+			.cot_item header h3 {
+				margin: 0;
+				-moz-pointer-events: none;
+				-webkit-pointer-events: none;
+				-ms-pointer-events: none;
+				pointer-events: none;
+			}
+
+	.cot_items {
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		-moz-flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+		width: calc(100% + 2em);
+		margin: -2em 0 0 -2em;
+	}
+
+		.cot_items .item {
+			margin: 2em 0 0 2em;
+			width: calc(50% - 2em);
+		}
+.show{
+    margin: auto;
+    margin-top: 50px !important;
+    width: 800px;
+    margin-bottom: 50px;
+    
+    
+}
+.show_back{
+    background-color: #ffffff;
+    margin: auto;
+    margin-top: 30px;
+    width: 850px;
+    border-radius: 15px;
+    margin-bottom: 50px;
+}
+.show1{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.good{
+	color: #b23a40;
+	text-align: center;
+}
+.renew {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 680px;
+}
+.comment{
+	margin-bottom: 10px;
+}
+.write{
+	margin-top: 8px;
+	background-color: #ffffff;
+	border-radius: 15px;
+	margin-right: 240px;
+	margin-left: 240px;
+}
+
+.renew1{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 980px;
+	
+}
+
+.renew2{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 710px;
+	
+}
+
+.edit{
+	margin-top: 8px;
+	background-color: #ffffff;
+	border-radius: 15px;
+	margin-right: 240px;
+	margin-left: 240px;
+}
+.edit_2{
+	margin-top: 20px;
+	margin-right: 250px;
+	margin-left: 250px;
+}
+.button_style{
+	border-top: 10px;
+	border-bottom: 10px;
+}

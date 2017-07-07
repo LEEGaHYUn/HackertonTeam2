@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <title></title>
+  </head>
+
+
+
+<body>
+<div class="write">
+  <div class="margin">
+    <h1>New Post</h1>
+    <!--<form action='/write' method="post" multipart="true">-->
+        
+    <!--    <input name ="cat_name" type="text" placeholder="카테고리">-->
+    <!--    <br>-->
+    <!--    <input name="title" type="text" placeholder="가게 이름">-->
+    <!--    <br>-->
+    <!--    <input name="direction" type="text" placeholder="주소">-->
+    <!--    <br>-->
+    <!--    <input name="runtime" type="text" placeholder="운영 시간">-->
+    <!--    <br>-->
+    <!--    <input name="image" type="file">-->
+    <!--    <br>-->
+    <!--    <textarea name="content" cols="3" placeholder="추천의 한 마디를 적어주세요!"></textarea>-->
+    <!--    <br>-->
+    <!--    <button type="submit">upload</button>-->
+    <!--</form> -->
+    
+    <%= form_tag('/write', method: "post", multipart: true) do %>
+      <select name="cat_name">
+        <option value="공부">공부</option>
+        <option value="사진">사진</option>
+        <option value="커피">커피</option>
+        <option value="밀크티">밀크티</option>
+        <option value="음료">음료</option>
+        <option value="빙수">빙수</option>
+        <option value="케이크">케이크</option>
+        <option value="기타">기타</option>
+      </select>
+    <br>
+    
+    <br>
+      <%= text_field_tag 'title', placeholder= "가게 이름" %><br>
+      <%= text_field_tag 'direction', placeholder='주소' %><br>
+      <%= text_field_tag 'runtime', placeholder='운영 시간' %><br>
+      <%= text_area_tag 'content', placeholder='추천의 한 마디를적어주세요!'  %><br>
+      <%= file_field_tag 'image_url', accept: 'image/*' %><br><br>
+      <center><%= submit_tag "upload" %></center><br>
+    <% end %>
+  </div>
+</div>
+
+</body>
+</html>

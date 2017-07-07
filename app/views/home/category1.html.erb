@@ -1,0 +1,55 @@
+<html>
+<head>
+  <title></title>
+  
+</head>
+ 
+  <!-- 카테고리 제목 -->
+
+  <!-- 지역 체크박스 -->
+<body>
+     <!-- <div class="container">-->
+    	<!--<table class="table">-->
+     <!--     <thead class="thead-default">-->
+     <!--       <tr>-->
+     <!--         <th>제목</th>-->
+     <!--         <th>내용</th>-->
+     <!--       </tr>-->
+     <!--     </thead>-->
+        
+     <!--       <%#@posts.each do |p| %>-->
+     <!--       <tbody>-->
+     <!--       <tr>-->
+     <!--           <td><a href ="/home/show/<%#=p.id%>"><%#= p.title %></a></td>-->
+                <td><%#= p.direction %></td>
+     <!--       </tr>-->
+     <!--       </tbody>-->
+     <!--       <%# end %>           -->
+           
+     <!--     </tbody>-->
+     <!--   </table>-->
+     <!--   </div>-->
+
+       <div class="category">
+           <a href = "/home/index"><button class="button">메인으로</button></a>
+           <a href = "/home/post_write" ><button class="button">작성하기</button></a>
+       <section id="intro" class="main">
+         <% @posts.each do |p| %>
+            <article class="cat_item">
+							<header>
+								<a href="category1"><%=image_tag("pic01.jpeg")%></a>
+								<h3><a href ="/home/show/<%=p.id%>"><%= p.title %></a></h3>
+							</header>
+							<h3><%= p.direction %></h3>
+							<ul class="actions">
+								<li><a href ="/home/show/<%=p.id%>"><button>More</button></a></li>
+							</ul>
+						</article>
+			
+				<% end %> 
+				
+				</section>
+        </div>
+        
+</body>        
+</html> 

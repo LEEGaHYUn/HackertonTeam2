@@ -1,0 +1,172 @@
+  <!-- 메인 페이지-->
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Likelion</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header" class="alt">
+				<div class="inner">
+					<h1>Cafe Navigation</h1>
+					<p>지역 주민도 몰랐던 모든 카페, 우리가 알려드립니다. <a href="#">Cafe Navigation</a></p>
+				</div>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+				<!-- Banner -->
+					<section id="intro" class="main">
+						<span class="icon fa-diamond major"><i class="fa fa-diamond" aria-hidden="true"></i></span>
+						<h2>Cafe Navigarion</h2>
+						<p>우리의 서비스는 카페를 좋아하는 카페족들을 위한 서비스입니다.<br />
+						맨날 가던 똑같은 카페말고, 새로운 카페를 가보고 싶지 않나요?<br />
+						각 상황에 맞는 카페를 추천드리고 카페의 정보를 알려드립니다.٩(ᐛ)و </p>
+						<ul class="actions">
+							<li><a href="/home/post_write" class="button big">내 글 작성하기</a></li>
+						</ul>
+					</section>
+
+				<!-- Items -->
+				<div class="renew1">
+					<a href = "/home/post_write"><button class="button">로그아웃</button></a></div>
+					<section class="main items">
+						<article class="item">
+							<header>
+								<a href="/category1"><%=image_tag("pic01.jpeg")%></a>
+								<h3>Study</h3>
+							</header>
+							<p><b>마음 놓고 공부할 수 있는 공부 분위기 좋은 카페</b><br></p>
+							<ul class="actions">
+								<li><a href="/category1" class="button">More</a></li>
+							</ul>
+						</article>
+						<article class="item">
+							<header>
+								<a href="/category2"><%=image_tag("pic02.jpg")%></a>
+								<h3>Photo, Selfi</h3>
+							</header>
+							<p><b>인생샷은 여기서! 사진 찍기 좋은 카페</b></p>
+							<ul class="actions">
+								<li><a href="/category2" class="button">More</a></li>
+							</ul>
+						</article>
+						<article class="item">
+							<header>
+								<a href="/category3"><%=image_tag("pic03.jpg")%></a>
+								<h3>Coffee</h3>
+							</header>
+							<p><b>원두향이 솔솔~ 커피에 충실! 커피맛이 좋은 카페</b></p>
+							<ul class="actions">
+								<li><a href="/category3" class="button">More</a></li>
+							</ul>
+						</article>
+						<article class="item">
+							<header>
+								<a href="/category4"><%=image_tag("pic04.jpg")%></a>
+								<h3>Milk tea</h3>
+							</header>
+							<p><b>밀크티도 맛이 다르다! 밀크티가 맛있는 카페</b></p>
+							<ul class="actions">
+								<li><a href="/category4" class="button">More</a></li>
+							</ul>
+						</article>
+						<article class="item">
+							<header>
+								<a href="/category5"><%=image_tag("pic05.jpg")%></a>
+								<h3>Tasty Drink</h3>
+							</header>
+							<p><b>우리는 남들과 달라! 특별한 음료가 돋보이는 카페</b></p>
+							<ul class="actions">
+								<li><a href="/category5" class="button">More</a></li>
+							</ul>
+						</article>
+						<article class="item">
+							<header>
+								<a href="/category6"><%=image_tag("pic06.jpg")%></a>
+								<h3>ice flakes</h3>
+							</header>
+							<p><b>오늘 후식은 빙수야~~ 시원한 빙수로 마음까지 뻥 뚫리는 카페</b></p>
+							<ul class="actions">
+								<li><a href="/category6" class="button">More</a></li>
+							</ul>
+						</article>
+						<article class="item">
+							<header>
+								<a href="/category7"><%=image_tag("pic07.jpg")%></a>
+								<h3>cake</h3>
+							</header>
+							<p><b>달콤한 케이크로 기분까지 달콤해지는 카페</b></p>
+							<ul class="actions">
+								<li><a href="/category7" class="button">More</a></li>
+							</ul>
+						</article>
+						<article class="item">
+							<header>
+								<a href="/category8"><%=image_tag("pic08.jpg")%></a>
+								<h3>others</h3>
+							</header>
+							<p><b>다른 곳엔 없는</b></p><ul class="actions">
+								<li><a href="/category8" class="button">More</a></li>
+							</ul>
+						</article>
+						
+					</section>
+					
+					
+					  <!--<%# @categories.each do |c| %>-->
+       <!-- <tbody>-->
+       <!-- <tr>-->
+       <!--     <td><a href="category<%#=c.id%>"><%#= c.name %></a></td>-->
+       <!-- </tr>-->
+       <!-- </tbody>-->
+       <!-- <%# end %>-->
+      
+      
+      </tbody>
+    </table>
+    
+    
+
+				
+
+				<!-- Main -->
+				<!--
+					<section id="main" class="main">
+						<header>
+							<h2>Lorem ipsum dolor</h2>
+						</header>
+						<p>Fusce malesuada efficitur venenatis. Pellentesque tempor leo sed massa hendrerit hendrerit. In sed feugiat est, eu congue elit. Ut porta magna vel felis sodales vulputate. Donec faucibus dapibus lacus non ornare. Etiam eget neque id metus gravida tristique ac quis erat. Aenean quis aliquet sem. Ut ut elementum sem. Suspendisse eleifend ut est non dapibus. Nulla porta, neque quis pretium sagittis, tortor lacus elementum metus, in imperdiet ante lorem vitae ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam eget neque id metus gravida tristique ac quis erat. Aenean quis aliquet sem. Ut ut elementum sem. Suspendisse eleifend ut est non dapibus. Nulla porta, neque quis pretium sagittis, tortor lacus elementum metus, in imperdiet ante lorem vitae ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+					</section>
+				-->
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="icons">
+							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="#" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+						<p class="copyright">&copy; 멋쟁이 사자처럼 여대해커톤 2팀 최성은, 이가현, 김혜연, 노하은.</p>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
+      
+      
+    
